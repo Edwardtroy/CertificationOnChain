@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "description": "CAC Certification on blockchain",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "author": "ThoughtWorks",
+  "dependencies": {
+    "openzeppelin-solidity": "^1.12.0",
+    "truffle-contract": "^1.1.11",
+    "web3": "^0.20.0"
+  }
+}
