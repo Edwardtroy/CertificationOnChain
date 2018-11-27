@@ -9,6 +9,7 @@
   "dependencies": {
     "openzeppelin-solidity": "^1.12.0",
     "truffle-contract": "^1.1.11",
+    "truffle-wallet-provider": "0.0.4",
     "web3": "^0.20.0"
   }
 }

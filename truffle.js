@@ -11,6 +11,10 @@
  *     gasPrice: 10000000000,
  *   },
  */
+var WalletProvider = require("truffle-wallet-provider");
+var keystore = require('fs').readFileSync('./keystore').toString();
+var pass = require('fs').readFileSync('./pass').toString();
+var wallet = require('ethereumjs-wallet').fromV3(keystore, pass);
 
 module.exports = {
   	// See <http://truffleframework.com/docs/advanced/configuration>
@@ -20,6 +24,11 @@ module.exports = {
 			host: '127.0.0.1',
 			port: 7545,
 			network_id: '*'
-		}
+		},
+		// ropsten: {
+		// 	network_id: 3,
+		// 	gas: 4465030,
+		// 	provider: new WalletProvider(wallet, "https://ropsten.infura.io/")
+		// }
 	}
 };
